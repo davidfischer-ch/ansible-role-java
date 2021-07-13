@@ -1,9 +1,7 @@
 java_dynamic_defaults:
-  linux-mint-19:
+  linux-mint:
     java_apt_repository: ''
-  ubuntu-16.04:
-    java_apt_repository: ''
-  ubuntu-17.10:
+  ubuntu:
     java_apt_repository: ''
   default:
     java_apt_repository: "{{ java_from_oracle|bool|ternary('ppa:webupd8team/java', 'ppa:openjdk-r/ppa') }}"
